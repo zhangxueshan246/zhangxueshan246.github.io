@@ -126,40 +126,6 @@
     max-width: 100%;
   }
 
-/* FIXME: img macros */
-
-.block-content img.left {
-      float: left;
-    }
-
-.block-content img.right {
-      float: right;
-    }
-
-.block-content img.loading-asset {
-      width: 9px;
-    }
-
-.open-block-ref-link {
-  border-radius: 0.25rem;
-  opacity: 0.5;
-}
-
-.open-block-ref-link:hover {
-  opacity: 1;
-}
-
-.open-block-ref-link {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  font-size: 12px;
-  line-height: 1em;
-  position: relative;
-  right: -4px;
-}
-
 .block-body blockquote:first-child,
   .block-body pre:first-child {
     margin-top: 8px;
@@ -171,16 +137,6 @@
   border-left-color: var(--ls-guideline-color, #ddd);
 }
 
-.block-control,
-.block-control:hover {
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 14px;
-  min-width: 10px;
-  color: initial;
-  user-select: none;
-}
-
 .block-ref {
   color: var(--ls-link-text-color);
   padding-bottom: 2px;
@@ -188,10 +144,6 @@
   border-bottom-color: var(--ls-block-ref-link-text-color);
   cursor: alias;
 }
-
-.block-ref-wrap {
-    display: inline-block;
-  }
 
 .block-ref:hover {
     color: var(--ls-link-text-hover-color)
@@ -356,8 +308,8 @@
 
 .bullet-container {
   display: flex;
-  height: 12px;
-  width: 12px;
+  height: 13px;
+  width: 13px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -369,15 +321,10 @@
 
 .bullet-container .bullet {
     border-radius: 50%;
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     background-color: var(--ls-block-bullet-color, #394b59);
-    transition: transform .2s;
   }
-
-.bullet-container:hover .bullet {
-      transform: scale(1.2);
-    }
 
 .bullet-container.bullet-closed {
     background-color: var(--ls-block-bullet-border-color, #ced9e0);
@@ -565,10 +512,6 @@
     transform: translateX(calc(-100% + 1rem));
   }
 
-.is-mobile .absolute-modal.is-overflow-vw-x {
-      transform: translateX(-1%);
-    }
-
 .non-block-editor textarea,
 pre {
   display: block;
@@ -582,10 +525,7 @@ pre {
   background: var(--ls-secondary-background-color);
 }
 
-.file {
-  max-width: 86vw;
-}
-  .file textarea, .file pre {
+.file textarea, .file pre {
     margin: 0;
   }
 
@@ -1192,9 +1132,8 @@ html[data-theme=light] a.right-sidebar-button:hover {
   .extensions__code > .CodeMirror {
     z-index: 0;
     height: auto;
-    padding: 6px 0 0 0;
+    margin: 6px 0 0 0;
     font-family: Fira Code, Monaco, Menlo, Consolas, 'COURIER NEW', monospace;
-    max-width: 86vw;
   }
 
 html[data-theme=light] #right-sidebar .reveal h1,
