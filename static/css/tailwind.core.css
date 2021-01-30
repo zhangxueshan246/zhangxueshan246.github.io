@@ -908,10 +908,6 @@ video {
   height: 1.5rem;
 }
 
-.h-7 {
-  height: 1.75rem;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -1590,10 +1586,6 @@ video {
   width: 1.5rem;
 }
 
-.w-7 {
-  width: 1.75rem;
-}
-
 .w-8 {
   width: 2rem;
 }
@@ -1946,22 +1938,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
-  .lg\:inset-y-0 {
-    top: 0;
-    bottom: 0;
-  }
-
-  .lg\:right-0 {
-    right: 0;
-  }
-
-  .lg\:w-1\/2 {
-    width: 50%;
-  }
 }
 
 @media (min-width: 1280px) {
