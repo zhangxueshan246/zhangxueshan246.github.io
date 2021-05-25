@@ -4,7 +4,7 @@
   --ls-page-text-size: 1em;
   --ls-page-title-size: 36px;
   --ls-font-family: 'Inter';
-  --ls-main-content-max-width: 700px;
+  --ls-main-content-max-width: 740px;
   --ls-border-radius-low: 4px;
   --ls-border-radius-medium: 8px;
 }
@@ -34,7 +34,8 @@ html[data-theme='dark'] {
   --ls-table-tr-even-background-color: #03333f;
   --ls-active-primary-color: #8ec2c2;
   --ls-active-secondary-color: #d0e8e8;
-  --ls-block-properties-background-color: #02222a;
+  --ls-block-properties-background-color: #06323e;
+  --ls-page-properties-background-color: #02171d;
   --ls-block-ref-link-text-color: #1a6376;
   --ls-search-background-color: linear-gradient(
     to right,
@@ -67,8 +68,8 @@ html[data-theme='dark'] {
   --ls-page-blockquote-border-color: var(--ls-border-color);
   --ls-page-inline-code-color: var(--ls-primary-text-color);
   --ls-page-inline-code-bg-color: #01222a;
-  --ls-scrollbar-foreground-color: rgba(255, 255, 255, 0.05);
-  --ls-scrollbar-background-color: rgba(30, 60, 67, 0.9);
+  --ls-scrollbar-foreground-color: #11505f;
+  --ls-scrollbar-background-color: rgba(30, 60, 67, 0.1);
   --ls-scrollbar-thumb-hover-color: rgba(255, 255, 255, 0.2);
   --ls-head-text-color: var(--ls-link-text-color);
   --ls-icon-color: var(--ls-link-text-color);
@@ -93,6 +94,7 @@ html[data-theme='light'] {
   --ls-active-primary-color: rgb(4, 85, 145);
   --ls-active-secondary-color: #003761;
   --ls-block-properties-background-color: #f7f6f4;
+  --ls-page-properties-background-color: #eae7e1;
   --ls-block-ref-link-text-color: #d8e1e8;
   --ls-search-background-color: var(--ls-primary-background-color);
   --ls-border-color: #ccc;
@@ -396,7 +398,7 @@ li p:first-child,
 }
 
 li p:last-child,
-.block-body p:last-child {
+.block-body p:last-child, .block-body ul:last-child, .block-body ol:last-child, .block-body dl:last-child {
   margin-bottom: 0;
 }
 
@@ -725,6 +727,11 @@ a.fade-link:hover {
   height: 20px;
 }
 
+.svg-small svg {
+    transform: scale(0.6);
+    display: inline;
+}
+
 /* < > buttons */
 
 a.navigation {
@@ -757,6 +764,7 @@ mark {
 
 .block-ref {
   padding: 2px 5px;
+  display: inline;
 }
 
 .block-ref .block-ref {
