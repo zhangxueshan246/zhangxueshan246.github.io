@@ -1,35 +1,46 @@
-/*
- * @copyright (c) 2016, Philipp Thürwächter & Pattrick Hüper
- * @copyright (c) 2007-present, Stephen Colebourne & Michael Nascimento Santos
- * @license BSD-3-Clause (see LICENSE in the root directory of this source tree)
- */
+/* @preserve
+**
+** LICENSE for the sqlite3 WebAssembly/JavaScript APIs.
+**
+** This bundle (typically released as sqlite3.js or sqlite3.mjs)
+** is an amalgamation of JavaScript source code from two projects:
+**
+** 1) https://emscripten.org: the Emscripten "glue code" is covered by
+**    the terms of the MIT license and University of Illinois/NCSA
+**    Open Source License, as described at:
+**
+**    https://emscripten.org/docs/introducing_emscripten/emscripten_license.html
+**
+** 2) https://sqlite.org: all code and documentation labeled as being
+**    from this source are released under the same terms as the sqlite3
+**    C library:
+**
+** 2022-10-16
+**
+** The author disclaims copyright to this source code.  In place of a
+** legal notice, here is a blessing:
+**
+** *   May you do good and not evil.
+** *   May you find forgiveness for yourself and forgive others.
+** *   May you share freely, never taking more than you give.
+*/
 
-/*
- * @copyright (c) 2016, Philipp Thürwächter & Pattrick Hüper
- * @license BSD-3-Clause (see LICENSE in the root directory of this source tree)
- */
-
-/*
- * @copyright (c) 2016, Philipp Thürwächter, Pattrick Hüper
- * @copyright (c) 2007-present, Stephen Colebourne & Michael Nascimento Santos
- * @license BSD-3-Clause (see LICENSE in the root directory of this source tree)
- */
+/* @preserve
+** This code was built from sqlite3 version...
+**
+** SQLITE_VERSION "3.52.0"
+** SQLITE_VERSION_NUMBER 3052000
+** SQLITE_SOURCE_ID "2026-01-30 06:37:34 407724c4e80efdf93d885e95b5209a100a3f470fe0298138be57201f65f9817e"
+**
+** Emscripten SDK: 5.0.0
+*/
 
 /**
- * @copyright (c) 2016, Philipp Thürwächter & Pattrick Hüper
- * @copyright (c) 2007-present, Stephen Colebourne & Michael Nascimento Santos
- * @license BSD-3-Clause (see LICENSE in the root directory of this source tree)
+ * @license
+ * Copyright 2019 Google LLC
+ * SPDX-License-Identifier: Apache-2.0
  */
 
-/**
- * @copyright (c) 2016, Philipp Thürwächter & Pattrick Hüper
- * @license BSD-3-Clause (see LICENSE in the root directory of this source tree)
- */
+//! Documented elsewhere in this file.
 
-//! @copyright (c) 2007-present, Stephen Colebourne & Michael Nascimento Santos
-
-//! @copyright (c) 2015-present, Philipp Thürwächter, Pattrick Hüper & js-joda contributors
-
-//! @license BSD-3-Clause (see LICENSE in the root directory of this source tree)
-
-//! @version @js-joda/core - 3.2.0
+//! Impl for importDb() when its 2nd arg is a function.
